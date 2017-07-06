@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Nome"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/textViewFantasyNameLabel" />
+
+
+    <TextView
+        android:id="@+id/textViewFantasyNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nome Fantasia: "
+        android:layout_below="@+id/textViewClientName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewClientFantasyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewFantasyNameLabel"
+        android:layout_toEndOf="@+id/textViewFantasyNameLabel"
+        android:layout_toRightOf="@+id/textViewFantasyNameLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientCpfOrCnpjLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewFantasyNameLabel"
+        android:layout_marginTop="20dp"
+        android:text="CPF: " />
+
+    <TextView
+        android:id="@+id/textViewClientCPFOrCnpj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF/CNPJ"
+        android:layout_above="@+id/textViewClientGenderLabel"
+        android:layout_toRightOf="@+id/textViewClientCpfOrCnpjLabel"
+        android:layout_toEndOf="@+id/textViewClientCpfOrCnpjLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientRGLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RG: "
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/textViewClientCPFOrCnpj"
+        android:layout_alignBottom="@+id/textViewClientCPFOrCnpj"
+        android:layout_toRightOf="@+id/textViewClientNaturalOf"
+        android:layout_toEndOf="@+id/textViewClientNaturalOf" />
+
+    <TextView
+        android:id="@+id/textViewClientRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignBaseline="@+id/textViewClientRGLabel"
+        android:layout_alignBottom="@+id/textViewClientRGLabel"
+        android:layout_toRightOf="@+id/textViewClientRGLabel"
+        android:layout_toEndOf="@+id/textViewClientRGLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientStateRegistrationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insc. Estadual: "
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/textViewClientRG"
+        android:layout_alignBottom="@+id/textViewClientRG"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textViewClientStateRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewClientStateRegistrationLabel"
+        android:layout_toEndOf="@+id/textViewClientStateRegistrationLabel"
+        android:layout_toRightOf="@+id/textViewClientStateRegistrationLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientGenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewClientCpfOrCnpjLabel"
+        android:layout_marginTop="20dp"
+        android:text="Sexo: " />
+
+    <TextView
+        android:id="@+id/textViewClientGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewClientGenderLabel"
+        android:layout_alignBottom="@+id/textViewClientGenderLabel"
+        android:layout_toEndOf="@+id/textViewClientGenderLabel"
+        android:layout_toRightOf="@+id/textViewClientGenderLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientNaturalOfLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Natural de: "
+        android:layout_above="@+id/textViewClientAddressLabel"
+        android:layout_toRightOf="@+id/textViewClientCPFOrCnpj"
+        android:layout_toEndOf="@+id/textViewClientCPFOrCnpj" />
+
+    <TextView
+        android:id="@+id/textViewClientNaturalOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewClientNaturalOfLabel"
+        android:layout_toEndOf="@+id/textViewClientNaturalOfLabel"
+        android:layout_toRightOf="@+id/textViewClientNaturalOfLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientBirthDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Nasc.: "
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/textViewClientAddressLabel"
+        android:layout_alignLeft="@+id/textViewClientNaturalOf"
+        android:layout_alignRight="@+id/textViewClientNaturalOf"
+        android:layout_alignStart="@+id/textViewClientNaturalOf" />
+
+    <TextView
+        android:id="@+id/textViewClientBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewClientBirthDateLabel"
+        android:layout_toEndOf="@+id/textViewClientBirthDateLabel"
+        android:layout_toRightOf="@+id/textViewClientBirthDateLabel"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewClientAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewClientGenderLabel"
+        android:layout_marginTop="20dp"
+        android:text="Endereço"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewClientAddressLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@mipmap/ic_home" />
+
+    <TextView
+        android:id="@+id/textViewClientAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewClientAddressLabel"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewClientAddressNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nº: "
+        android:layout_alignBaseline="@+id/textViewClientAddress"
+        android:layout_alignBottom="@+id/textViewClientAddress"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textViewClientAddressNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewClientAddressNumberLabel"
+        android:layout_alignTop="@+id/textViewClientAddressNumberLabel"
+        android:layout_toEndOf="@+id/textViewClientAddressNumberLabel"
+        android:layout_toRightOf="@+id/textViewClientAddressNumberLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientCepLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CEP: "
+        android:layout_below="@+id/textViewClientAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewClientCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewClientCepLabel"
+        android:layout_toEndOf="@+id/textViewClientCepLabel"
+        android:layout_toRightOf="@+id/textViewClientCepLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientCityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/textViewClientCep"
+        android:layout_toEndOf="@+id/textViewClientCep"
+        android:layout_toRightOf="@+id/textViewClientCep"
+        android:text="Cid.: " />
+
+    <TextView
+        android:id="@+id/textViewClientCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewClientCityLabel"
+        android:layout_toEndOf="@+id/textViewClientCityLabel"
+        android:layout_toRightOf="@+id/textViewClientCityLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientNeighborhoodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/textViewClientCity"
+        android:layout_toEndOf="@+id/textViewClientCity"
+        android:layout_toRightOf="@+id/textViewClientCity"
+        android:text="Bairro: " />
+
+    <TextView
+        android:id="@+id/textViewClientNeighborhood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewClientNeighborhoodLabel"
+        android:layout_alignRight="@+id/textViewClientNaturalOf"
+        android:layout_alignTop="@+id/textViewClientNeighborhoodLabel" />
+
+    <TextView
+        android:id="@+id/textViewClientUfLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UF: "
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/textViewClientNeighborhood"
+        android:layout_alignBottom="@+id/textViewClientNeighborhood"
+        android:layout_toRightOf="@+id/textViewClientNeighborhood"
+        android:layout_toEndOf="@+id/textViewClientNeighborhood" />
+
+    <TextView
+        android:id="@+id/textViewClientUf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewClientUfLabel"
+        android:layout_toEndOf="@+id/textViewClientUfLabel"
+        android:layout_toRightOf="@+id/textViewClientUfLabel" />
+
+
+
+</RelativeLayout>
+
+
+

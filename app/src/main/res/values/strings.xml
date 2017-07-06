@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">G2App</string>
+    <string name="app_new_client">Novo Cliente</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_search">Procurar</string>
+    <string name="drawer_open">Abrir</string>
+    <string name="drawer_close">Fechar</string>
+
+    <string name="nav_item_home">Início</string>
+    <string name="nav_item_clients">Clientes</string>
+    <string name="nav_item_products">Produtos</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_clients</item>
+        <item>@string/nav_item_products</item>
+    </string-array>
+
+    <string name="title_products">Produtos</string>
+    <string name="title_clients">Clientes</string>
+    <string name="title_home">Início</string>
+    <string name="title_activity_main">G2App</string>
+
+    <!-- New Client hints -->
+    <string name="name_hint">Nome</string>
+    <string name="fantasy_name_hint">Nome Fantasia</string>
+    <string name="cpf_hint">CPF</string>
+    <string name="cnpj_hint">CNPJ</string>
+    <string name="mother_name_hint">Nome da Mãe</string>
+    <string name="father_name_hint">Nome do Pai</string>
+    <string name="covenant_hint">Convênio</string>
+    <string name="spouse_hint">Cônjugue</string>
+    <string name="gender_label">Sexo</string>
+    <string name="rg_hint">RG</string>
+    <string name="state_registration_hint">Inscrição Estadual</string>
+    <string name="birth_date_hint">Data Nasc.</string>
+
+</resources>
